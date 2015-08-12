@@ -25,7 +25,6 @@
 			?>
 	</div>
 	<div id="col2">
-		<?php include_once("connect.php") ?>
 			<?php	
 			$query = $handler->query("SELECT * FROM `ALL` WHERE Item LIKE 'c%' AND Col=2 ORDER BY Item ASC");
 			
