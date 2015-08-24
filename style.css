@@ -94,9 +94,13 @@ a:active {
 	margin-right: auto;
 }
 
-#code {
+ul.code {
+	display: block;
+    list-style-type: none;
+}
+
+div.code {
 	margin-left: 16px;
-	line-height: 12px;
 }
 
 /*
