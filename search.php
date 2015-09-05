@@ -28,6 +28,7 @@ require_once 'dbconnect.php';
 		WHERE Item LIKE '%{$keywords}%'
 		OR Definition LIKE '%{$keywords}%'
 		OR History LIKE '%{$keywords}%'
+		ORDER BY Item ASC
 	");
 	
 	if($query->rowCount()) {
