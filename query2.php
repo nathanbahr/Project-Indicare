@@ -1,0 +1,1 @@
+<?php $query = $handler->query("SELECT * FROM `ALL` WHERE Item LIKE '$title%' AND Col=2 ORDER BY Item ASC"); ?>

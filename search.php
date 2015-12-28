@@ -15,7 +15,7 @@
 		<?php include_once("links.php") ?>
 	</div>
 <br>
-<div id="content">
+<div class="content-narrow">
 <?php
 if(isset($_GET['keywords'])) {
 require_once 'dbconnect.php';
@@ -26,8 +26,15 @@ require_once 'dbconnect.php';
 		SELECT *
 		FROM `ALL`
 		WHERE Item LIKE '%{$keywords}%'
+		OR AltName LIKE '%{$keywords}%'
 		OR Definition LIKE '%{$keywords}%'
 		OR History LIKE '%{$keywords}%'
+		OR Link1DN LIKE '%{$keywords}%'
+		OR Link2DN LIKE '%{$keywords}%'
+		OR Link3DN LIKE '%{$keywords}%'
+		OR Link4DN LIKE '%{$keywords}%'
+		OR Link5DN LIKE '%{$keywords}%'
+		OR Link6DN LIKE '%{$keywords}%'
 		ORDER BY Item ASC
 	");
 	

@@ -21,5 +21,9 @@
 			echo "<p>Page last modified: " . date ("F d Y H:i:s", filemtime($filename)) . "</p>";
 		}
 		?>--->
-	</div>	
+	</div>
+	
+	<div>
+		<a href="https://github.com/nathanbahr/Project-Indicare.git">GitHub</a>
+	</div>
 </div>
