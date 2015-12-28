@@ -23,6 +23,10 @@
 		?>--->
 	</div>
 	
+	<table class="footer">
+		<tr><td><a href="commands.php">commands</a></td> <td><a href="electrical.php">electrical</a></td></tr>
+	</table>
+	
 	<div>
 		<a href="https://github.com/nathanbahr/Project-Indicare.git">GitHub</a>
 	</div>

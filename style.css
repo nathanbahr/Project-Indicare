@@ -141,6 +141,10 @@ div.links {
 	padding-top: 10%;
 }
 
+table.footer {
+	width: 100%;
+}
+
 ul.code {
 	display: block;
     list-style-type: none;
