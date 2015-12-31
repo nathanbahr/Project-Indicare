@@ -8,7 +8,7 @@
 	<?php include_once("dbconnect.php") ?>
 	<?php include_once("banner.php") ?>
 <div id="content">
-<h2>#</h2>
+<div class="title"><h2>#</h2></div>
 	<div id="col1">
 			<?php
 				$query = $handler->query("SELECT * FROM `ALL` WHERE Item REGEXP '^[0-9]' AND Col=1 ORDER BY Item ASC");
