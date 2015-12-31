@@ -7,7 +7,7 @@
 	<?php include_once("analyticstracking.php") ?>
 	<?php include_once("dbconnect.php") ?>
 	<?php include_once("banner.php") ?>
-<div id="content">
+<div class="content">
 <?php include_once("title.php") ?>
 	<div id="col1">
 			<?php
@@ -23,6 +23,5 @@
 	</div>
 </div>
 <?php include_once("footer.php") ?>
-</div>
 </body>
 </html>
