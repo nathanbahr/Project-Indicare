@@ -16,10 +16,10 @@
 			WHERE `Type ID` =100
 			ORDER BY `Item` ASC");
 				
-		include ("result.php");
-	?>
+			include ("result.php");	
+		?>
+	</div>
 </div>
-	<?php include_once("footer.php") ?>
-</div>
+<?php include_once("footer.php") ?>
 </body>
 </html>
