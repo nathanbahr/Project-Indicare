@@ -143,6 +143,8 @@ div.links {
 
 #formMain {
 	padding: 2%;
+	min-height: 128px;
+	/*background-image: url('hdds.jpg');*/
 }
 
 div.title {
