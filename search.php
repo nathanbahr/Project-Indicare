@@ -4,21 +4,12 @@
 	<?php include_once("head.php") ?>
 </head>
 <body>
-<?php include_once("analyticstracking.php") ?>
-	<div id="headerL">		
-		<?php include_once("banner.php") ?>
-	</div>
-	<div id="search">
-		<?php include_once("searchForm.php") ?>
-	</div>
-	<div id="links">
-		<?php include_once("links.php") ?>
-	</div>
-<br>
+	<?php include_once("analyticstracking.php") ?>
+	<?php require_once("dbconnect.php") ?>
+	<?php include_once("banner.php") ?>
 <div class="content-narrow">
 <?php
 if(isset($_GET['keywords'])) {
-require_once 'dbconnect.php';
 		
 	$keywords = $_GET['keywords'];
 	
