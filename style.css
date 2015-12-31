@@ -11,11 +11,11 @@ table {
 
 h1 {
 	color: #000000;
-	text-align: center;
 }
 
 h2 {
 	text-align: left;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 /* regular links #999999*/
@@ -52,7 +52,7 @@ a:active {
     list-style:none;
     margin-bottom:10px;
     float:left;
-    width:100%;
+	padding:0px;
 }
 
 #nav a:link,
@@ -80,6 +80,14 @@ a:active {
     float:left;
     position:relative;
 }
+
+
+/*title link*/
+#search a:link,
+#search a:visited {
+	color: #000000;
+}
+
 
 
 
@@ -139,6 +147,7 @@ div.links {
 
 div.title {
 	background-color:  #f0f0f5;
+	padding-left: 1%;
 }
 
 #col1 {
