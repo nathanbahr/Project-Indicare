@@ -24,6 +24,7 @@
 	</div>
 	
 	<table class="footer">
+		<a href="recent.php">recent</a>
 		<tr><td><a href="commands.php">commands</a></td> <td><a href="electrical.php">electrical</a></td></tr>
 	</table>
 	
