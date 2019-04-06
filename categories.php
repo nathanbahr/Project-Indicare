@@ -8,6 +8,7 @@
 		<div class="content-narrow">
 			<?php include_once("title.php") ?>
 			<ul>
+                <li><a href="databases.php">databases</a></li>
 				<li><a href="commands.php">commands</a></li>
 				<li><a href="companies.php">companies</a></li>
 				<li><a href="conferences.php">conferences</a></li>	
