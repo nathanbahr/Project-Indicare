@@ -1,34 +1,42 @@
-<div id="footer">
-    <a href="#">Home</a>
+<div class="footer">
+    <a href="#">top</a>
 	
     <p id="end"></p>
-	<div id="modified">
-		<?php include_once("connect.php") ?>
-		<?php
-		//outputs date: 2015-07-17 23:45:47.
-			$query = $handler->query("SELECT Modified FROM `ALL` ORDER BY Modified DESC LIMIT 1");
-			   
-			while($row = $query->fetch()) {
-			   echo '<p>Database last modified: ' . $row['Modified'] . '</p>';
+	<div class="modified">
+		<?php include_once("connect.php");
+		$utc_sql = "SELECT CONVERT_TZ(`Modified`, @@session.time_zone, '+00:00') AS `utc_datetime` FROM `ALL` ORDER BY `utc_datetime` DESC LIMIT 1";
+		foreach ($handler->query($utc_sql) as $row) {
+				print '<p>Database last modified: ' . $row['utc_datetime'] . ' UTC</p>';
 			}
 		?>
+	</div>
+	
+	<div class="sitemap">
+		<div id="col1">
+			<ul>
+				<li><a href="index.php">home</a></li>
+				<li><a href="categories.php">categories</a></li>
+				<li><a href="recent.php">recent</a></li>
+				<li><a href="timeline.php">timeline</a></li>
+				<li><a href="https://github.com/nathanbahr/Project-Indicare.git">source</a></li>
+				<li><a href="http://tocrg.org/phpmyadmin/">log in</a></li>	
+			</ul>
+		</div>
 		
-		<!---<?php
-		// outputs e.g. Last modified: December 29 2002 22:16:23.
-
-		$filename = 'search.php';
-		if (file_exists($filename)) {
-			echo "<p>Page last modified: " . date ("F d Y H:i:s", filemtime($filename)) . "</p>";
-		}
-		?>--->
-	</div>
-	
-	<table class="footer">
-		<a href="recent.php">recent</a>
-		<tr><td><a href="commands.php">commands</a></td> <td><a href="electrical.php">electrical</a></td></tr>
-	</table>
-	
-	<div>
-		<a href="https://github.com/nathanbahr/Project-Indicare.git">GitHub</a>
-	</div>
+		<div id="col2">
+			<ul>
+				<li><a href="commands.php">commands</a></li>
+				<li><a href="devices.php">devices</a></li>
+				<li><a href="electrical.php">electrical</a></li>
+				<li><a href="games.php">games</a></li>
+				<li><a href="html.php">html</a></li>
+				<li><a href="networking.php">networking</a></li>
+				<li><a href="people.php">people</a></li>
+				<li><a href="servers.php">servers</a></li>
+				<li><a href="software.php">software</a></li>
+				<li><a href="webdev.php">webdev</a></li>
+				<li><a href="websites.php">websites</a></li>
+			</ul>
+		</div>
+	</div>	
 </div>
