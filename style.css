@@ -359,7 +359,7 @@ original link and link visited gray: #ababab
 	
 /*Footer*/
 	div.footer {
-		height: 200px;
+		height: 300px;
 		width: 100%;
 		clear:both;
 		text-align: center;
@@ -454,5 +454,9 @@ pre {
 	margin-left: 8px;
 	margin-top: -16px;
 	width: 110%;
-}
+	}
+
+	div.footer {
+		height: 400px;
+	}
 }
